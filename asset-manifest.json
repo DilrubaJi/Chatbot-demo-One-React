@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b1cf8b7.css",
-    "main.js": "/static/js/main.9c9e3eac.js",
-    "index.html": "/index.html",
-    "main.4b1cf8b7.css.map": "/static/css/main.4b1cf8b7.css.map",
-    "main.9c9e3eac.js.map": "/static/js/main.9c9e3eac.js.map"
+    "main.css": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.4b1cf8b7.css",
+    "main.js": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.9c9e3eac.js",
+    "index.html": "/DilrubaJi/Chatbot-demo-One-React/index.html",
+    "main.4b1cf8b7.css.map": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.4b1cf8b7.css.map",
+    "main.9c9e3eac.js.map": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.9c9e3eac.js.map"
   },
   "entrypoints": [
     "static/css/main.4b1cf8b7.css",
