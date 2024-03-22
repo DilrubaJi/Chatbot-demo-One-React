@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/DilrubaJi/Chatbot-demo-One-React",
-  "name": "chatbot-demo-one",
-  "version": "1.0.0",
+  "name": "chatbot-demo-one-react",
+  "homepage": "https://dilrubaji.github.io/Chatbot-demo-One-React",
+  "version": "1.0.0", 
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
