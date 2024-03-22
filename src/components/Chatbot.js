@@ -12,7 +12,7 @@ const Chatbot = () => {
     <div className="chatbot-container">
       {/* Floating Chatbot Button */}
       <button className="chatbot-button" onClick={toggleChat}>
-        <img src="chatbot-icon.svg" alt="Chatbot" />
+        <img src="\svg_logo.svg" alt="Chatbot" />
       </button>
 
       {/* Chat Screen */}
@@ -20,7 +20,7 @@ const Chatbot = () => {
         <div className="chat-screen">
           {/* Close button */}
           <button className="close-button" onClick={toggleChat}>
-            <img src="close-icon.svg" alt="Close" />
+            <img src="\logo.jpg" alt="Close" />
           </button>
           {/* Chat messages can be rendered here */}
           <div className="chat-messages">
