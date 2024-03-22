@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import FeatureCard from '../components/feature-card'
 import Question1 from '../components/question1'
 import './home.css'
+import Chatbot from '../components/Chatbot'
 
 const Home = (props) => {
   return (
@@ -13,6 +14,10 @@ const Home = (props) => {
         <title>Chatbot demo One</title>
         <meta property="og:title" content="Chatbot demo One" />
       </Helmet>
+      <main>
+        
+      <Chatbot></Chatbot>
+
       <div className="home-header">
         <header
           data-thq="thq-navbar"
@@ -532,6 +537,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
+      </main>
       <div className="home-footer">
         <footer className="footerContainer home-footer1">
           <div className="home-container30">
