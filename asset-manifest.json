@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.4b1cf8b7.css",
-    "main.js": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.9c9e3eac.js",
+    "main.css": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.30c35a18.css",
+    "main.js": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.484dbec6.js",
     "index.html": "/DilrubaJi/Chatbot-demo-One-React/index.html",
-    "main.4b1cf8b7.css.map": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.4b1cf8b7.css.map",
-    "main.9c9e3eac.js.map": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.9c9e3eac.js.map"
+    "main.30c35a18.css.map": "/DilrubaJi/Chatbot-demo-One-React/static/css/main.30c35a18.css.map",
+    "main.484dbec6.js.map": "/DilrubaJi/Chatbot-demo-One-React/static/js/main.484dbec6.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b1cf8b7.css",
-    "static/js/main.9c9e3eac.js"
+    "static/css/main.30c35a18.css",
+    "static/js/main.484dbec6.js"
   ]
 }
