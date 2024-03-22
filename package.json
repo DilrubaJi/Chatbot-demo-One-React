@@ -1,6 +1,6 @@
 {
-  "name": "chatbot-demo-one-react",
   "homepage": "https://dilrubaji.github.io/Chatbot-demo-One-React",
+  "name": "chatbot-demo-one",
   "version": "1.0.0", 
   "private": true,
   "dependencies": {
