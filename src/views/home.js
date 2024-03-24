@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import FeatureCard from '../components/feature-card'
 import Question1 from '../components/question1'
 import './home.css'
-import Chatbot from '../components/Chatbot'
+import Chatbot from '../components/Chatbot/Chatbot'
 
 const Home = (props) => {
   return (
