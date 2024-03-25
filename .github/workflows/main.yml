@@ -16,6 +16,10 @@ jobs:
       with:
         node-version: '16'
     - run: npm ci
+    - name: Set git config
+      run: |
+        git config user.name "DilRubaJi"
+        git config user.email "trustdmail-dev@yahoo.com"
     - name: Build and Deploy
       run: |
         npm run build
