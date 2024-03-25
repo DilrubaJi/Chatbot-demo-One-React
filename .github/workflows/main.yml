@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: My Step
+      run: |
+        npm run build
+        npm run deploy
+      env:
+        REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+        REACT_APP_OPENAI_API_URL: ${{ secrets.REACT_APP_OPENAI_API_URL }}
+
