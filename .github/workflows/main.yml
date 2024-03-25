@@ -13,17 +13,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
-      with:
-        node-version: '16'
-    - run: npm ci
-    - name: Set git config
-      run: |
-        git config user.name "DilRubaJi"
-        git config user.email "trustdmail-dev@yahoo.com"
-    - name: Build and Deploy
-      run: |
-        npm run build
-        npm run deploy
+      # with:
+      #   node-version: '16'
+    # - run: npm ci
+    # - name: Set git config
+    #   run: |
+    #     git config user.name "DilRubaJi"
+    #     git config user.email "trustdmail-dev@yahoo.com"
+    # - name: Build and Deploy
+    #   run: |
+    #     npm run build
+    #     npm run deploy
       env:
         REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
         REACT_APP_OPENAI_API_URL: ${{ secrets.REACT_APP_OPENAI_API_URL }}
