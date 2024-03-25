@@ -9,21 +9,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      # with:
-      #   node-version: '16'
-    # - run: npm ci
-    # - name: Set git config
-    #   run: |
-    #     git config user.name "DilRubaJi"
-    #     git config user.email "trustdmail-dev@yahoo.com"
-    # - name: Build and Deploy
-    #   run: |
-    #     npm run build
-    #     npm run deploy
-      env:
-        REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
-        REACT_APP_OPENAI_API_URL: ${{ secrets.REACT_APP_OPENAI_API_URL }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '21.7.1'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        env:
+          REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+          REACT_APP_OPENAI_API_URL: ${{ secrets.REACT_APP_OPENAI_API_URL }}
+        run: npm run deploy
+
