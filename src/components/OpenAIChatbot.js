@@ -13,7 +13,7 @@ const OpenAIChatbot = () => {
     const handleSendMessage = async () => {
         try {
             const response = await axios.post(
-                // process.env.REACT_APP_OPENAI_API_URL,
+                process.env.REACT_APP_OPENAI_API_URL,
                 {
                     model: "gpt-3.5-turbo",
                     prompt: userInput,
@@ -25,7 +25,7 @@ const OpenAIChatbot = () => {
                 },
                 {
                     headers: {
-                        // Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
+                        Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
                     },
                 }
             );
