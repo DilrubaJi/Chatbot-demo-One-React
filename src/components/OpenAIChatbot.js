@@ -6,9 +6,6 @@ const OpenAIChatbot = () => {
     const [chatHistory, setChatHistory] = useState([]);
     const [errorMessage, setErrorMessasge] = useState("");
 
-    console.log("API:",process.env.REACT_APP_OPENAI_API_KEY);
-    console.log("URL:",process.env.REACT_APP_OPENAI_API_URL);
-
     const handleUserInput = (e) => {
         setUserInput(e.target.value);
     };
@@ -37,8 +34,8 @@ const OpenAIChatbot = () => {
             setChatHistory([...chatHistory, response.data.choices[0].text]);
             setUserInput('');
         } catch (error) {
-            console.error('Error sending message:', error);
-            setErrorMessasge(error?.response?.data?.error?.message);
+        
+            setErrorMessasge("ERROR");
         }
     };
 
@@ -61,9 +58,6 @@ const OpenAIChatbot = () => {
                 />
                 <button onClick={handleSendMessage}>Send</button>
             </div>
-            {/* <div>
-                {errorMessage}
-            </div> */}
         </div>
     );
 };
