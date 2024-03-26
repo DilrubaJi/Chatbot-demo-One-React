@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://github.com/${GITHUB_REPOSITORY}.git
+        git remote set-url origin https://${GITHUB_TOKEN}@github.com/'github.repository'
         npm run deploy
       env:
         REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
