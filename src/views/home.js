@@ -24,7 +24,7 @@ const Home = (props) => {
             data-thq="thq-navbar"
             className="navbarContainer home-navbar-interactive"
           >
-            <span className="logo">DIGITAL</span>
+            <span className="logo">DIGITAL1</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
                 <span className="bodySmall">Home</span>
