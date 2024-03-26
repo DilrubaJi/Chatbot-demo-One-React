@@ -6,6 +6,9 @@ const OpenAIChatbot = () => {
     const [chatHistory, setChatHistory] = useState([]);
     const [errorMessage, setErrorMessasge] = useState("");
 
+    console.log("API:",process.env.REACT_APP_OPENAI_API_KEY);
+    console.log("URL:",process.env.REACT_APP_OPENAI_API_URL);
+
     const handleUserInput = (e) => {
         setUserInput(e.target.value);
     };
@@ -13,7 +16,7 @@ const OpenAIChatbot = () => {
     const handleSendMessage = async () => {
         try {
             const response = await axios.post(
-                "https://api.openai.com/v1/chat/completions",
+                process.env.REACT_APP_OPENAI_API_URL,
                 {
                     model: "gpt-3.5-turbo",
                     prompt: userInput,
