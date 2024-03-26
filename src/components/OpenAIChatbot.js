@@ -31,7 +31,7 @@ const OpenAIChatbot = () => {
             );
 
             // Process the response and update chat history
-            setChatHistory([...chatHistory, response.data.choices[0].text]);
+            // setChatHistory([...chatHistory, response.data.choices[0].text]);
             setUserInput('');
         } catch (error) {
         
