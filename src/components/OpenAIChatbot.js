@@ -35,7 +35,7 @@ const OpenAIChatbot = () => {
             setUserInput('');
         } catch (error) {
         
-            setErrorMessasge("ERROR");
+            setErrorMessasge("An error occurred. Please try again later.");
         }
     };
 
