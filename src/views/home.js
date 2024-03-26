@@ -172,7 +172,9 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <OpenAIChatbot></OpenAIChatbot>
+
+        {/* <OpenAIChatbot></OpenAIChatbot> */}
+
         <div className="home-features">
           <div className="featuresContainer">
             <div className="home-features1">

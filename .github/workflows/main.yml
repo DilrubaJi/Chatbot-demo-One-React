@@ -44,4 +44,5 @@ jobs:
       env:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
+        REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
         REACT_APP_OPENAI_API_URL: ${{ secrets.REACT_APP_OPENAI_API_URL }}

@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@chatscope/chat-ui-kit-react": "^2.0.3",
     "@craco/craco": "^7.0.0-alpha.0",
     "axios": "^1.6.8",
     "prop-types": "15.7.2",
