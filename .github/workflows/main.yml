@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://${github_token}@github.com/${repository}
+        git remote set-url origin 'https://dilrubaji.github.io/Chatbot-demo-One-React'
         npm run deploy
       env:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
